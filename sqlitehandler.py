@@ -16,5 +16,5 @@ class SQLiteHandler(logging.Handler): # Inherit from logging.Handler
         # record.message is the log message
         thisdate = time.time()
         print record.getMessage()
-        db.commit()
         db.execute('INSERT INTO debug(date, loggername, srclineno, func, level, msg) VALUES(?,?,?,?,?,?)', (thisdate, record.name, record.lineno, record.funcName, record.levelname, record.msg))
+        db.commit()
