@@ -1,3 +1,4 @@
 *.conf
 *.sqlite
 *.pyc
+*.swp
