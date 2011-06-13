@@ -1,2 +1,8 @@
 Bitbot is a working usable example implementation of the Mt Gox JSON trading API in Python
 API docs for Mt Gox can be found here: https://mtgox.com/support/tradeAPI
+
+Usage:
+Edit bitbot.conf.distrib and put in your details, then save it as bitbot.conf and 'python bitbot.py'
+
+NOTE:
+If you're going to work on this and make commits, you'll want to 'mv dot.gitignore .gitignore' so you don't commit your own conf with your username / password or your sqlite logging database!
